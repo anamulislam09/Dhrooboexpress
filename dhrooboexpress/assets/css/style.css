@@ -4590,7 +4590,7 @@ body {
 }
 
 .header-1 {
-  background: #fff7f5;
+  background: #fbfbfb;
 }
 
 .header-2 {
@@ -4736,7 +4736,7 @@ body {
     Truck Trace Section Start
  ==========================================================================================*/
 .truck-trace {
-  margin-top: -110px;
+  /* margin-top: -110px; */
   position: relative;
   z-index: 4;
 }
@@ -4858,7 +4858,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 30px;
+  padding: 21px;
   background: var(--primary-200, #fff6f6);
 }
 .single-choose .choose-img {
@@ -4873,11 +4873,11 @@ body {
 }
 .single-choose .choose-title {
   color: var(--gray-900, #140a09);
-  font-size: 30px;
+  font-size: 27px;
   font-family: Syne;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 41px;
   letter-spacing: 0.45px;
 }
 
@@ -4968,6 +4968,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin:auto; */
 }
 .single-services .services-title {
   color: var(--gray-900, #140a09);
@@ -5215,6 +5216,26 @@ body {
   letter-spacing: 0.45px;
   border-bottom: 4px solid #f3f3f3 !important;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-tabs .nav-link {
+    margin-bottom: 0;
+    background: 0;
+    border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0 0px 16px 5px !important;
+    color: #000 !important;
+    font-size: 14px !important;
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.45px;
+    border-bottom: 4px solid #f3f3f3 !important;
+    margin-right: 20px;
+  }
 }
 
 .nav-tabs .nav-link.active {
@@ -7499,6 +7520,7 @@ User All Form Page Start
   }
   .section-pb {
     padding-bottom: 50px;
+    padding-top: 50px;
   }
   .section-pt {
     padding-top: 50px;
@@ -7638,7 +7660,7 @@ User All Form Page Start
     padding: 0;
   }
   .truck-trace .trace-wrapper {
-    padding: 50px;
+    /* padding-top: 350px; */
   }
   .section-title {
     font-size: 32px;
@@ -7785,4 +7807,77 @@ table.table.table-bordered {
 .col-12.py-5.chargePlan ul li {
   line-height: 37px;
   list-style: disc;
+}
+
+.col-lg-6.col-md-6.col-sm-6.footer-menu {
+  width: 50%;
+}
+
+/* product track start here  */
+
+.track {
+  padding-top: 350px !important;
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .track {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+/* @media only screen and (max-width: 991px) {
+  .track {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .track {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .track {
+    padding-top: 350px !important;
+   
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .track {
+    padding-top: 350px !important;
+   
+  }
+}
+
+/* delivery charge start here  */
+@media screen and (max-width: 600px){
+.section-pb {
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+}
+
+/* menubar custome design  */
+
+ul li.nav-item:hover .nav-link {
+  color: #fb5200 !important;
+}
+/*Client design  */
+
+.client-wrapper img {
+  width: 120px;
+  height: 60px;
+}
+.client-wrapper img:first-child {
+  background: #a69f9f;
+  border-radius: 10px;
 }
